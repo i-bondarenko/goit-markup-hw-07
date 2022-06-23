@@ -17,7 +17,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
     <title>Document</title>
   </head>
 
@@ -236,53 +236,73 @@
     </section>
 
     <!--Футер-->
-    <footer>
-      <div class="container footer">
-        <div class="contact-info">
-          <a href="./index.html" class="name studio">Web<span class="name-second">Studio</span></a>
-          <address class="location">г. Киев, пр-т Леси Украинки, 26</address>
-          <ul class="connection list">
-            <li class="item">
-              <a href="mailto:info@devstudio.com" class="phone">info@devstudio.com</a>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-info">
+          <a href="./index.html" class="footer-info__logo"
+            >Web<span class="footer-info__logo-span">Studio</span></a
+          >
+          <address class="footer-info__location">г. Киев, пр-т Леси Украинки, 26</address>
+          <ul class="contact-list list">
+            <li class="contact-list__item">
+              <a href="mailto:info@devstudio.com" class="contact-list__link">info@devstudio.com</a>
             </li>
-            <li class="item"><a href="tel:+380961111111" class="mail">+38 096 111 11 11</a></li>
+            <li class="contact-list__item">
+              <a href="tel:+380961111111" class="contact-list__link">+38 096 111 11 11</a>
+            </li>
           </ul>
         </div>
-        <div class="container-join">
-          <p class="join">Присоединяйтесь</p>
-          <div class="our-social-media">
-            <ul class="social-media list">
-              <li class="item">
-                <a href="" class="media-link">
-                  <svg class="icon" width="20" height="20">
-                    <use href="./images/icons-sprite-opti.svg#icon-instagram-2"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="item">
-                <a href="" class="media-link">
-                  <svg class="icon" width="20" height="20">
-                    <use href="./images/icons-sprite-opti.svg#icon-twitter-1"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="item">
-                <a href="" class="media-link">
-                  <svg class="icon" width="20" height="20">
-                    <use href="./images/icons-sprite-opti.svg#icon-facebook-1"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="item">
-                <a href="" class="media-link">
-                  <svg class="icon" width="20" height="20">
-                    <use href="./images/icons-sprite-opti.svg#icon-linkedin-1"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div>
+        <div class="join">
+          <p class="join__title">Присоединяйтесь</p>
+          <ul class="social-list list">
+            <li class="social-list__item">
+              <a href="" class="social-list__link">
+                <svg class="icon" width="20" height="20">
+                  <use href="./images/icons-sprite-opti.svg#icon-instagram-2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a href="" class="social-list__link">
+                <svg class="icon" width="20" height="20">
+                  <use href="./images/icons-sprite-opti.svg#icon-twitter-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a href="" class="social-list__link">
+                <svg class="icon" width="20" height="20">
+                  <use href="./images/icons-sprite-opti.svg#icon-facebook-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a href="" class="social-list__link">
+                <svg class="icon" width="20" height="20">
+                  <use href="./images/icons-sprite-opti.svg#icon-linkedin-1"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
         </div>
+        <form class="subscription">
+          <div class="subscription__form">
+            <label for="email" class="subscription__label">Подпишитесь на рассылку</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="subscription__input"
+              placeholder="E-mail"
+            />
+          </div>
+          <button type="submit" class="subscription__btn">
+            Подписаться
+            <svg class="subscription__icon" width="24" height="24">
+              <use href="./images/icons-sprite-opti.svg#icon-icon-send"></use>
+            </svg>
+          </button>
+        </form>
       </div>
     </footer>
   </body>
